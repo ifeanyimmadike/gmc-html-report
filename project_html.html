@@ -8,29 +8,50 @@
     <title>CHEF IFEANYI AFRICAN KITCHEN</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <h1>CHEF IFEANYI'S AFRICAN KITCHEN </h1>
     </header>
+    <hr>
+    <nav>
+        <ul>
+            <li>
+                <h2><a href="#home">HOME</a></h2>
+            </li>
+            <li>
+                <h2><a href="about.html">ABOUT</a></h2>
+            </li>
+            <li>
+                <h2><a href="work.html">WORK</a></h2>
+            </li>
+            <li>
+                <h2><a href="resume.html">RESUME</a></h2>
+            </li>
+            <li>
+                <h2><a href="contact.html">CONTACT</a></h2>
+            </li>
+
+        </ul>
+    </nav>
     <DIV>
         <h2>The best African kitchen tutorial in the Bahamas</h2>
         <p>We teach Africans and other races African delicacies ,we bring the world to an avaerage African kitchen/home .</p>
         <p>We have been in the business of African dishes for the past 20 years and counting .</p>
     </DIV>
     <figure>
-        <img src="african food image 35.jpg" alt="about 35 of our African meal receipe">
-        <figcaption>About 35 of our African meal recipe </figcaption>
+        <img src="images/travis-grossen-AXDTTuh-0UI-unsplash.jpg" width="530" height="370" alt="">
+        <figcaption>CHEF IFEANYI</figcaption>
     </figure>
     <DIV>
         <h3>TODAY WE ARE TEACHING HOW TO PREPARE OGBONNO SOUP WITH VEGETABLE(UGU) </h3>
         <figure> 
-            <img src="ogbono soup image.jpg" alt="mouth watery ogbono soup">
+        <img src="images/ogbono_soup_image.jpg" width="350" height="200" alt="mouth watery ogbono soup">
             <figcaption>mouth watery Ogbonno soup</figcaption>
         </figure>
     </DIV>
     <SECTion>
         <p>Ogbono soup is a popular Nigerian dish enjoyed across the continent with any swallow of choice.It is made from ogbono fruit seed , the collected dried under the sun and grinded for use .</p>
         <p>Ogbonno soup ingredients:</p>
-        <ul type="circle">
+        <ul>
             <li>ogbonno seed</li>
             <li>Ogiri okpei</li>
             <li>stock fish</li>
@@ -47,8 +68,6 @@
             <li>palm oil</li>
             <li>Ugu(pumpkin leaves)</li>
         </ul>
-    </SECTion>
-    <section>
         <h3>Preparation:</h3>
         <ol> 
             <li>Grinde the Ogbonno and Ogiri into smooth powder and set aside</li>
@@ -62,50 +81,65 @@
             <li>stir for 5-7min add the chopped Vegetable(ugu) </li>
         </ol>
         <figure>
-            <img src="ogbonno and swallow.jpg" alt="">
+        <img src="images/ogbonno_and_swallow.jpg" width="350" height="150" alt="come join me">
             <figcaption>come and join me </figcaption>
         </figure>
         <br>
-        <nav> <a href="https://www.youtube.com/embed/6R53tXyb-20" target="_blank"> Youtube video tutorial</a> </nav>
+        <iframe width="360" height="115" src="https://www.youtube.com/embed/6R53tXyb-20" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
     <aside>
         <h3>Thank you for staying tune</h3>
         <p>Kindly fill the form below to receive newsletter from us and get notifications on new post</p>
-        <form action="">
-            <label for="fname">FULLNAME</label>
-            <input type="text" name="name" id="fname" placeholder="firstname first">
+        <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <label for="fname">FULLNAME:</label>
+            <input type="text" name="name" id="fname" placeholder="firstname first" required>
             <br>
             <br>
-            <label for="femail">EMAIL</label>
-            <input type="password" name="email" id="femail" placeholder="abc.org">
+            <label for="femail">EMAIL:</label>
+            <input type="password" name="email" id="femail" placeholder="abc.org" required>
+            <br>
+            <br>
+            <label for="fusername">USERNAME:</label>
+            <input type="text" name="email" id="fusername" placeholder="" required>
             <br>
             <br>
             <label for="ftel">TELEPHONE NO:</label>
             <input type="tel" name="number" id="ftel">
             <br>
             <br>
-            <label for="fdob">DOB</label>
+            <label for="fdob">DOB:</label>
             <input type="date" name="DOB" id="fdob">
             <br>
             <br>
-            <label for="fgender">GENDER</label>
+            <label for="fgender">GENDER:</label>
             <select name="gender" id="fgender">
-            <option value="male">male</option>
-            <option value="female">female</option>
-            <option value="transfemale">transfemale</option>
-            <option value="transmale">transmale</option>
+                <optgroup label="Regular">
+                <option value="male" >male</option>
+                <option value="female" selected>female</option>
+                </optgroup>
+                <optgroup label="Trans">
+                <option value="transfemale">transfemale</option>
+                <option value="transmale">transmale</option>
+                </optgroup>
             </select> 
             <br>
             <br>
             <label for="fpass">PASSWORD</label>
             <input type="password" name="password" id="fpass">
             <br>
+        </fieldset>
+        <fieldset>
+            <legend>COMMENT SECTION</legend>
+            <label for="fcom">Your message</label>
             <br>
-            <label for="fcom">DROP YOUR COMMENTS</label>
-            <br>
-            <textarea name="comments" id="fcom" cols="30" rows="10"></textarea>
+            <textarea name="comments" id="fcom" cols="30" rows="10" placeholder="Drop your comment here"></textarea>
+        </fieldset>
+            
             <br>
             <input type="submit" value="submit">
+        
         </form>
     </aside>
     <footer>
@@ -115,14 +149,18 @@
             <li><a href="https://allnigerianfoods.com/nigerian-ogbono-soup/">All Nigerian food</a>Allnigerian food.com</li>
         </ul>
         <h3>contact us on </h3> 
+        
         <a href="https://www.facebook.com/ifeanyipoet" target="_blank">facebook</a><br>
         <a href="https://www.instagram.com/ifeanyipoet" target="_blank">instagram</a>
-        <h3>DISCLAIMER</h3>
-        <P>Ifeanyi's kitchen is not responsible for any kitchen mistake done by reading our content</P>
+        <br>
+        <h3><em>DISCLAIMER</em></h3>
+        <strong>Ifeanyi's kitchen is not responsible for any kitchen mistake done by reading our content</strong>
+        <address>
+            244/246 GOMYCODE HOUSE HERBERT MACAULAY WAY YABA +2348034895877
+        </address>
         
     </footer>
+    <a href="#">Back top</a>
 
-
-    
 </body>
 </html>
