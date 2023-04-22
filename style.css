@@ -1,0 +1,47 @@
+h1{color: red; text-align: center;
+}
+
+body{background-color: yellow;
+    font-family: Roboto,sans-serif;
+}
+
+h3,h2{color: red;
+    text-transform: capitalize;
+}
+
+
+a:hover{
+    color:black;
+    
+
+}
+
+a:active{
+    color:aqua;
+    
+}
+
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+nav{
+padding-left: 6cm;
+
+}
+
+.home,.about,.resume,.contact,.work{
+    display: inline;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.asia{
+    margin-left: 350px;
+    display: inline-block;
+}
+
+.spacing{
+    display: inline;
+}
